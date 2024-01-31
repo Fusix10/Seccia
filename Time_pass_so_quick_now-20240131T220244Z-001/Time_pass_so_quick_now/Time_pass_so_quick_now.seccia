@@ -122,8 +122,8 @@
 },
 "scenario": {
 "board": {
-"nextid": 104,
-"x": 176,
+"nextid": 107,
+"x": -2128,
 "sections": [
 {
 "name": "Scénario",
