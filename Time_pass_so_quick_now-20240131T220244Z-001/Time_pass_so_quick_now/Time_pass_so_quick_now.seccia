@@ -123,7 +123,7 @@
 "scenario": {
 "board": {
 "nextid": 131,
-"x": 115,
+"x": 60,
 "sections": [
 {
 "name": "Scénario",
@@ -531,8 +531,8 @@
 "type": 256,
 "id": 83,
 "name": "#CantTuch",
-"x": 496,
-"y": 376,
+"x": 416,
+"y": 408,
 "plugs": [
 {
 "id": 84,
@@ -692,7 +692,7 @@
 ]
 }
 ],
-"enter": "hide S_STREAT.O_GIF"
+"enter": "hide S_STREAT.O_GIF\r\nsilent_take P_HERO O_GIF"
 },
 {
 "type": 262,
@@ -843,9 +843,9 @@
 "uid": "R_STREAT",
 "graph": {
 "board": {
-"nextid": 460,
-"x": 471,
-"y": 1822,
+"nextid": 513,
+"x": 328,
+"y": 1792,
 "boxes": [
 {
 "type": 1287,
@@ -1299,7 +1299,6 @@
 "type": 3
 }
 ],
-"script": "take P_HERO O_GIF",
 "lock": true,
 "dialog": "D_WIND"
 },
@@ -1314,40 +1313,61 @@
 "name": "PissOffPeople"
 },
 {
-"type": 513,
-"id": 438,
-"x": 263,
-"y": -1600,
+"type": 1296,
+"id": 496,
+"x": 148,
+"y": -1539,
 "plugs": [
 {
-"id": 439,
-"type": 2
-},
-{
-"id": 440,
-"type": 3
-}
-],
-"script": "set_placement ",
-"plugCount": 1
-},
-{
-"type": 1290,
-"id": 458,
-"x": 145,
-"y": -1602,
-"plugs": [
-{
-"id": 459,
+"id": 497,
 "type": 3,
 "trgs": [
-439
+499
 ]
 }
 ],
+"script": "cursor x_cursor y_cursor\r\nmove_in_pixels O_GIFINV x_cursor y_cursor\r\nshow O_GIFINV\r\n",
 "varCmp": "==",
-"obj": "O_GIF",
-"obj2": "O_MARIE"
+"scene": "S_STREAT",
+"obj": "O_GIF"
+},
+{
+"type": 771,
+"id": 498,
+"x": 266,
+"y": -1539,
+"plugs": [
+{
+"id": 499,
+"type": 2
+},
+{
+"id": 500,
+"type": 3,
+"trgs": [
+502
+]
+}
+],
+"duration": "1000"
+},
+{
+"type": 513,
+"id": 501,
+"x": 366,
+"y": -1538,
+"plugs": [
+{
+"id": 502,
+"type": 2
+},
+{
+"id": 503,
+"type": 3
+}
+],
+"script": "hide O_GIFINV",
+"plugCount": 1
 }
 ]
 }
@@ -1533,7 +1553,7 @@
 }
 },
 "zoom": 80,
-"nextID": 6,
+"nextID": 7,
 "x": 11,
 "y": 237,
 "role": "R_STREAT"
@@ -8792,6 +8812,44 @@
 {},
 {}
 ]
+},
+{
+"uid": "O_GIFINV",
+"id": 6,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 252,
+"y": 548,
+"parallax": 100,
+"placement": "OBJECT",
+"lightAmbient": 255,
+"lightDiffuse": 16777215,
+"lightAngle": 30,
+"lightDist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
 }
 ],
 "sid": 15,
@@ -10033,7 +10091,6 @@
 {
 "object": {
 "bbox": true,
-"maxScale": -1,
 "width": 420,
 "height": 295
 },
