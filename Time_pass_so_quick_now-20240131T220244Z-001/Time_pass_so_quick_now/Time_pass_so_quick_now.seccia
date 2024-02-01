@@ -123,7 +123,7 @@
 "scenario": {
 "board": {
 "nextid": 131,
-"x": 60,
+"x": 49,
 "sections": [
 {
 "name": "Scénario",
@@ -567,8 +567,7 @@
 96
 ]
 }
-],
-"enter": "task R_STREAT Animation"
+]
 },
 {
 "type": 256,
@@ -594,8 +593,8 @@
 "type": 256,
 "id": 92,
 "name": "#PissMarieOff",
-"x": 1104,
-"y": 288,
+"x": 1096,
+"y": 280,
 "plugs": [
 {
 "id": 93,
@@ -634,7 +633,7 @@
 "type": 256,
 "id": 98,
 "name": "#EnterSomewhere",
-"x": 1552,
+"x": 1528,
 "y": 288,
 "plugs": [
 {
@@ -648,7 +647,8 @@
 102
 ]
 }
-]
+],
+"enter": "task R_STREAT T_WALL"
 },
 {
 "type": 256,
@@ -692,7 +692,7 @@
 ]
 }
 ],
-"enter": "hide S_STREAT.O_GIF\r\nsilent_take P_HERO O_GIF"
+"enter": "hide S_STREAT.O_GIF\r\nsilent_take P_HERO O_GIF\r\nhide S_STREAT.O_GIFINV"
 },
 {
 "type": 262,
@@ -843,15 +843,15 @@
 "uid": "R_STREAT",
 "graph": {
 "board": {
-"nextid": 513,
-"x": 328,
-"y": 1792,
+"nextid": 920,
+"x": 382,
+"y": 2044,
 "boxes": [
 {
 "type": 1287,
 "id": 58,
-"x": -455,
-"y": -1712,
+"x": -453,
+"y": -1723,
 "plugs": [
 {
 "id": 59,
@@ -869,8 +869,8 @@
 {
 "type": 781,
 "id": 60,
-"x": -327,
-"y": -1711,
+"x": -325,
+"y": -1722,
 "plugs": [
 {
 "id": 61,
@@ -889,8 +889,8 @@
 {
 "type": 780,
 "id": 63,
-"x": -202,
-"y": -1712,
+"x": -200,
+"y": -1723,
 "plugs": [
 {
 "id": 64,
@@ -968,8 +968,8 @@
 "resize": true,
 "width": 613,
 "height": 388,
-"x": -491,
-"y": -1762,
+"x": -489,
+"y": -1773,
 "name": "BLINDANDDEAF"
 },
 {
@@ -985,8 +985,8 @@
 {
 "type": 1287,
 "id": 96,
-"x": -454,
-"y": -1601,
+"x": -452,
+"y": -1612,
 "plugs": [
 {
 "id": 97,
@@ -1004,8 +1004,8 @@
 {
 "type": 781,
 "id": 98,
-"x": -325,
-"y": -1600,
+"x": -347,
+"y": -1606,
 "plugs": [
 {
 "id": 99,
@@ -1024,8 +1024,8 @@
 {
 "type": 780,
 "id": 101,
-"x": -210,
-"y": -1600,
+"x": -208,
+"y": -1611,
 "plugs": [
 {
 "id": 102,
@@ -1042,7 +1042,7 @@
 "type": 1287,
 "id": 104,
 "x": -450,
-"y": -1484,
+"y": -1495,
 "plugs": [
 {
 "id": 105,
@@ -1060,8 +1060,8 @@
 {
 "type": 781,
 "id": 106,
-"x": -324,
-"y": -1483,
+"x": -322,
+"y": -1494,
 "plugs": [
 {
 "id": 107,
@@ -1080,8 +1080,8 @@
 {
 "type": 780,
 "id": 109,
-"x": -210,
-"y": -1483,
+"x": -208,
+"y": -1494,
 "plugs": [
 {
 "id": 110,
@@ -1097,8 +1097,8 @@
 {
 "type": 781,
 "id": 133,
-"x": 15,
-"y": -1726,
+"x": 17,
+"y": -1737,
 "plugs": [
 {
 "id": 134,
@@ -1114,8 +1114,8 @@
 {
 "type": 264,
 "id": 291,
-"x": -94,
-"y": -1726,
+"x": -98,
+"y": -1736,
 "plugs": [
 {
 "id": 292,
@@ -1133,8 +1133,8 @@
 "type": 256,
 "id": 343,
 "resize": true,
-"width": 713,
-"height": 269,
+"width": 863,
+"height": 275,
 "x": -111,
 "y": -1369,
 "name": "Animation"
@@ -1228,8 +1228,8 @@
 {
 "type": 1286,
 "id": 400,
-"x": -76,
-"y": -1340,
+"x": -69,
+"y": -1347,
 "plugs": [
 {
 "id": 401,
@@ -1242,7 +1242,7 @@
 "resolved": "#CantTuch",
 "varCmp": "==",
 "dialog": "D_INVISIBAL",
-"sentence": 2
+"sentence": 1
 },
 {
 "type": 1281,
@@ -1287,8 +1287,8 @@
 {
 "type": 781,
 "id": 434,
-"x": 99,
-"y": -1166,
+"x": 490,
+"y": -1284,
 "plugs": [
 {
 "id": 435,
@@ -1296,7 +1296,10 @@
 },
 {
 "id": 436,
-"type": 3
+"type": 3,
+"trgs": [
+637
+]
 }
 ],
 "lock": true,
@@ -1306,46 +1309,99 @@
 "type": 256,
 "id": 437,
 "resize": true,
-"width": 421,
-"height": 250,
-"x": 121,
-"y": -1636,
+"width": 590,
+"height": 345,
+"x": 124,
+"y": -1732,
 "name": "PissOffPeople"
 },
 {
-"type": 1296,
-"id": 496,
-"x": 148,
-"y": -1539,
+"type": 780,
+"id": 636,
+"x": 583,
+"y": -1285,
 "plugs": [
 {
-"id": 497,
+"id": 637,
+"type": 2
+},
+{
+"id": 638,
+"type": 3
+}
+],
+"puzzle": "#ICanAffectEnvironment"
+},
+{
+"type": 781,
+"id": 739,
+"x": 576,
+"y": -1487,
+"plugs": [
+{
+"id": 740,
+"type": 2
+},
+{
+"id": 741,
+"type": 3
+}
+],
+"dialog": "D_WALL"
+},
+{
+"type": 264,
+"id": 742,
+"x": 580,
+"y": -1614,
+"plugs": [
+{
+"id": 743,
 "type": 3,
 "trgs": [
-499
+740
 ]
 }
 ],
-"script": "cursor x_cursor y_cursor\r\nmove_in_pixels O_GIFINV x_cursor y_cursor\r\nshow O_GIFINV\r\n",
+"script": "talk D_WALL",
+"plugCount": 1,
+"task": "T_WALL"
+},
+{
+"type": 1290,
+"id": 879,
+"x": 164,
+"y": -1581,
+"plugs": [
+{
+"id": 880,
+"type": 3,
+"trgs": [
+882
+]
+}
+],
+"script": "alert \"1\"\r\ncursor x y\r\nshow O_GIFINV\r\nmove_in_pixels O_GIFINV $x $y\r\n",
 "varCmp": "==",
-"scene": "S_STREAT",
 "obj": "O_GIF"
 },
 {
 "type": 771,
-"id": 498,
+"id": 881,
 "x": 266,
-"y": -1539,
+"y": -1579,
 "plugs": [
 {
-"id": 499,
+"id": 882,
 "type": 2
 },
 {
-"id": 500,
+"id": 883,
 "type": 3,
 "trgs": [
-502
+885,
+909,
+897
 ]
 }
 ],
@@ -1353,20 +1409,56 @@
 },
 {
 "type": 513,
-"id": 501,
-"x": 366,
-"y": -1538,
+"id": 884,
+"x": 416,
+"y": -1677,
 "plugs": [
 {
-"id": 502,
+"id": 885,
 "type": 2
 },
 {
-"id": 503,
+"id": 886,
 "type": 3
 }
 ],
-"script": "hide O_GIFINV",
+"script": "pos_in_pixels O_MARIE xM yM\r\npos_in_pixels O_GIFINV xG yG\r\nmath_distance $xM $yM $xG $yG Recup\r\nif less $Recup 1\r\n\ttalk D_PISSOFF 3000 // HAAAAA quesque c'est ?\r\n\tif unresolved #PissMarieOff\r\n\t\tsuccess #PissMarieOff\r\n\tend\r\nend\r\nhide O_GIFINV\r\n\r\n",
+"plugCount": 1
+},
+{
+"type": 513,
+"id": 896,
+"x": 397,
+"y": -1447,
+"plugs": [
+{
+"id": 897,
+"type": 2
+},
+{
+"id": 898,
+"type": 3
+}
+],
+"script": "pos_in_pixels O_MICHAEL xM yM\r\npos_in_pixels O_GIFINV xG yG\r\nmath_distance $xM $yM $xG $yG Recup\r\nif less $Recup 30\r\n\tif unresolved #PissMichaelOff\r\n\t\tsuccess #PissMichaelOff\r\n\tend\r\n\ttalk D_PISSOFF 3 // Le vent se lève ?\r\nend\r\nhide O_GIFINV\r\n\r\n",
+"plugCount": 1
+},
+{
+"type": 513,
+"id": 908,
+"x": 410,
+"y": -1555,
+"plugs": [
+{
+"id": 909,
+"type": 2
+},
+{
+"id": 910,
+"type": 3
+}
+],
+"script": "pos_in_pixels O_MATIEU xM yM\r\npos_in_pixels O_GIFINV xG yG\r\nmath_distance $xM $yM $xG $yG Recup\r\nif less $Recup 30\r\n\tif unresolved #PissMatieuOff\r\n\t\tsuccess #PissMatieuOff\r\n\tend\r\n\ttalk D_PISSOFF 2 // Quesqu'il se passe ?\r\nend\r\nhide O_GIFINV\r\n\r\n",
 "plugCount": 1
 }
 ]
@@ -1378,9 +1470,9 @@
 "uid": "R_HERO",
 "graph": {
 "board": {
-"nextid": 101,
-"x": 561,
-"y": 604,
+"nextid": 128,
+"x": 780,
+"y": 639,
 "boxes": [
 {
 "type": 257,
@@ -1552,10 +1644,10 @@
 "opacitySpeed": 100
 }
 },
-"zoom": 80,
-"nextID": 7,
-"x": 11,
-"y": 237,
+"zoom": 40,
+"nextID": 9,
+"x": -157,
+"y": -88,
 "role": "R_STREAT"
 },
 "objects": [
@@ -8822,10 +8914,80 @@
 "",
 ""
 ],
-"x": 252,
-"y": 548,
+"x": 421,
+"y": 717,
 "parallax": 100,
 "placement": "OBJECT",
+"lightAmbient": 255,
+"lightDiffuse": 16777215,
+"lightAngle": 30,
+"lightDist": -1,
+"grids": [
+{
+"cells": [
+{
+"name": "01",
+"col": 26,
+"row": 47,
+"event": true
+},
+{
+"name": "02",
+"col": 44,
+"row": 47,
+"event": true
+},
+{
+"name": "03",
+"col": 80,
+"row": 47,
+"event": true
+}
+]
+},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"depths": [
+{
+"a": 100,
+"b": 100
+},
+{
+"y": 1024,
+"a": 100,
+"b": 100
+}
+],
+"ideHidden": true
+},
+{
+"uid": "O_UID",
+"id": 7,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 910,
+"y": 512,
+"parallax": 100,
 "lightAmbient": 255,
 "lightDiffuse": 16777215,
 "lightAngle": 30,
@@ -8853,7 +9015,101 @@
 }
 ],
 "sid": 15,
-"uid": "S_STREAT"
+"uid": "S_STREAT",
+"doors": [
+{
+"name": "DOOR",
+"id": 8,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1595,
+"y": 448,
+"width": 160,
+"height": 376
+}
+]
+},
+{
+"scene": {
+"lightAmbient": -1,
+"lightBlur": -1,
+"layers": {
+"MA": {
+"speedX": 100,
+"speedY": 100,
+"parallax": 100,
+"opacityMin": 100,
+"opacityMax": 100,
+"opacitySpeed": 100
+},
+"MB": {
+"speedX": 100,
+"speedY": 100,
+"parallax": 100,
+"opacityMin": 100,
+"opacityMax": 100,
+"opacitySpeed": 100
+},
+"MC": {
+"speedX": 100,
+"speedY": 100,
+"parallax": 100,
+"opacityMin": 100,
+"opacityMax": 100,
+"opacitySpeed": 100
+},
+"MD": {
+"speedX": 100,
+"speedY": 100,
+"parallax": 100,
+"opacityMin": 100,
+"opacityMax": 100,
+"opacitySpeed": 100
+},
+"FA": {
+"speedX": 100,
+"speedY": 100,
+"parallax": 100,
+"opacityMin": 100,
+"opacityMax": 100,
+"opacitySpeed": 100
+},
+"FB": {
+"speedX": 100,
+"speedY": 100,
+"parallax": 100,
+"opacityMin": 100,
+"opacityMax": 100,
+"opacitySpeed": 100
+},
+"FC": {
+"speedX": 100,
+"speedY": 100,
+"parallax": 100,
+"opacityMin": 100,
+"opacityMax": 100,
+"opacitySpeed": 100
+},
+"FD": {
+"speedX": 100,
+"speedY": 100,
+"parallax": 100,
+"opacityMin": 100,
+"opacityMax": 100,
+"opacitySpeed": 100
+}
+},
+"zoom": 50,
+"nextID": 1,
+"x": -178,
+"y": -51
+},
+"sid": 27,
+"uid": "S"
 }
 ],
 "objects": [
@@ -10421,7 +10677,11 @@
 "bbox": true,
 "maxScale": -1,
 "width": 420,
-"height": 295
+"height": 295,
+"speedX": 2147483647,
+"speedY": 2147483647,
+"x": 198,
+"y": 162
 },
 "anims": [
 {
@@ -10744,6 +11004,112 @@
 }
 ]
 }
+},
+{
+"object": {
+"bbox": true,
+"maxScale": -1
+},
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+]
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+]
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loopRangeMax": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+]
+}
+],
+"sid": 23,
+"uid": "O_UID"
 }
 ],
 "players": [
@@ -10758,7 +11124,7 @@
 }
 ],
 "meta": {
-"nextAssetID": 23
+"nextAssetID": 28
 },
 "dialogs": [
 {
@@ -11013,6 +11379,60 @@
 ]
 },
 "nextID": 2
+}
+},
+{
+"sid": 25,
+"uid": "D_PISSOFF",
+"dialog": {
+"sentence": {
+"sentences": [
+{
+"id": 1,
+"text": {
+"en": "HAAAAA quesque c'est ?"
+},
+"exit": true,
+"speaker": "O_MARIE"
+},
+{
+"id": 2,
+"text": {
+"en": "Quesqu'il se passe ?"
+},
+"exit": true,
+"speaker": "O_MATIEU"
+},
+{
+"id": 3,
+"text": {
+"en": "Le vent se lève ?"
+},
+"exit": true,
+"speaker": "O_MICHAEL"
+}
+]
+},
+"nextID": 4
+}
+},
+{
+"sid": 26,
+"uid": "D_WALL",
+"dialog": {
+"sentence": {
+"sentences": [
+{
+"id": 2,
+"text": {
+"en": "je vais traverser le murs."
+},
+"speaker": "O",
+"exit": true
+}
+]
+},
+"nextID": 3
 }
 }
 ],
