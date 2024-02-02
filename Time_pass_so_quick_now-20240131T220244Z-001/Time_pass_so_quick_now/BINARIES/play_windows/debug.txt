@@ -1,2 +1,17 @@
 New Game
+success ok #71
+success ok #74
+success ok #83
+success ok #5
+success ok #80
+success ok #86
 1
+1
+1
+success ok #92
+1
+success ok #95
+1
+1
+1
+success ok #89
